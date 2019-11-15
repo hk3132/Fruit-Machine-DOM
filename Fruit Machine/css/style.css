@@ -1,0 +1,113 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: radial-gradient(circle, rgba(63,227,233,1) 0%, rgba(107,228,247,1) 63%, rgba(74,100,224,1) 84%);
+}
+
+.all{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex:1;
+}
+
+.enter{
+  display: flex;
+  justify-content: center;
+  padding: 5% 0% 5% 0%;
+}
+
+.text{
+  width: 500px;
+  height: 100px;
+  animation: flash 1.5s ease;
+  animation-iteration-count: infinite;
+  filter: drop-shadow(-0.7vh 0.7vh 1vh rgb(243, 220, 14))
+}
+
+#input{
+  height: 50px;
+  margin: 2.5% 1% 0% 0%;
+}
+
+.start{
+  filter: drop-shadow(-0.7vh 0.7vh 0.5vh rgb(9, 10, 109));
+}
+
+#start{
+  width: 100px;
+}
+
+#reset{
+  width: 100px;
+}
+
+.slotImages {
+    display: flex;
+    justify-content: center;
+    background: rgb(86, 240, 245);
+  }
+
+.slot{
+  width: 100px;
+  height: 100px;
+}
+
+.balance{
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding: 1% 0% 0% 0%;
+}
+
+#balanceDisplay{
+  padding: 0% 0% 0% 1%;
+}
+
+.result{
+  margin: 0 auto;
+  height: 275px;
+  width: 376px;
+}
+
+.wins{
+  display: flex;
+  justify-content: space-evenly;
+  animation: flash 1.5s ease;
+  animation-iteration-count: infinite;
+}
+
+#win1{
+  width: 100px;
+  height: 45px;
+}
+
+#win2{
+  width: 180px;
+  height: 50px;
+}
+
+#winsDisplay{
+  font-size: 40px;
+}
+
+#payoutDisplay{
+  font-size: 40px;
+}
+
+@keyframes flash {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
